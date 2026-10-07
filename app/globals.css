@@ -10,6 +10,15 @@ body {
   background-color: #f2ede3;
   color: #2b2620;
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -229,8 +238,15 @@ img {
   padding: 45px 30px;
 }
 
+.conteudo-principal > .sobre:only-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
 .sobre-conteudo {
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -456,6 +472,7 @@ img {
   text-align: center;
   padding: 20px;
   font-size: 0.85rem;
+  margin-top: auto;
 }
 
 
