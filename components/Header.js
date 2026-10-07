@@ -8,10 +8,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-top">
-        <div className="logo">
+        <Link href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="logo-disco"></div>
           <h1>Lado B Discos</h1>
-        </div>
+        </Link>
         <ul className="menu">
           <li><Link href="/">Início</Link></li>
           <li><Link href="/albuns">Álbuns</Link></li>
